@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title Container with Yellow Background -->
+
+    <!-- Text prompt -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Lemonade"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />  <!-- Keeping text color black for contrast -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to select a lemon!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Image display -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lemon_tree"
+        android:contentDescription="Image for lemonade step"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center" />
+
+</LinearLayout>
